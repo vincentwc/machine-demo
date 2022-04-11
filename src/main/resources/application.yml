@@ -1,0 +1,20 @@
+# REDIS (RedisProperties)
+# Redis数据库索引（默认为0）
+spring:
+  redis:
+    database: 0
+    cluster:
+      nodes:
+        - 10.253.17.37:6381
+        - 10.253.17.37:6382
+        - 10.253.17.37:6383
+        - 10.253.17.37:6384
+        - 10.253.17.37:6385
+        - 10.253.17.37:6386
+    jedis:
+      pool:
+        max-idle: 0
+        max-active: 8
+        max-wait: -1
+        min-idle: 0
+    timeout: 0
